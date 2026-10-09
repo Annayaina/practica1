@@ -5,7 +5,6 @@
 Код:
 #!/bin/bash
 grep -o '^[^:]*' /etc/passwd | sort
-<img width="295" height="55" alt="image" src="https://github.com/user-attachments/assets/e4d50ec7-e3d3-4a4a-b14b-57671c7a0e5f" />
 
 Результат:
 bin
