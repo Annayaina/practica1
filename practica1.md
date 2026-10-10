@@ -298,7 +298,7 @@ printf 'line1    with    spaces\nline2    also    spaces\n' > input.txt
 **Код (task9.sh):**
 
 ```bash
-sed 's/    /\t/g' "$1" > "$2"
+sed 's/    /\t/g' input.txt > output.txt
 ```
 
 **Запуск:**
