@@ -65,7 +65,6 @@ grep -v '^#' /etc/protocols | awk '{print $2, $1}' | sort -rn | head -5
 **План:** взять аргумент — посчитать длину — построить линию из `-` — вывести рамку.
 
 ```bash
-#!/bin/bash
 text="$1"
 len=${#text}
 line=$(printf '+%*s+' "$((len+2))" | tr ' ' '-')
