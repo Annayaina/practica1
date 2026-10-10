@@ -342,7 +342,7 @@ echo "data" > testdir/nonempty.txt
 **Код (task10.sh):**
 
 ```bash
-find "$1" -type f -empty
+find testdir -type f -empty
 ```
 
 **Запуск:**
