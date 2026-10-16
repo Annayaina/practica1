@@ -67,7 +67,7 @@ grep -v '^#' /etc/protocols | awk '{print $2, $1}' | sort -rn | head -5
 ```bash
 text="$1"
 len=${#text}
-line=$(printf '+%*s+' "$((len+2))" | tr ' ' '-')
+line=$(printf '%*s' "$((len+2))" | tr ' ' '-')
 echo "+$line+"
 echo "| $text |"
 echo "+$line+"
