@@ -68,9 +68,9 @@ grep -v '^#' /etc/protocols | awk '{print $2, $1}' | sort -rn | head -5
 text="$1"
 len=${#text}
 line=$(printf '+%*s+' "$((len+2))" | tr ' ' '-')
-echo "$line"
+echo "+$line+"
 echo "| $text |"
-echo "$line"
+echo "+$line+"
 ```
 
 **Вывод (запуск с `Hello from RTU MIREA!`):**
